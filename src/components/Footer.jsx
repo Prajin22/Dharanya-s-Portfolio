@@ -36,10 +36,10 @@ export default function Footer() {
               <div className="mt-10">
                 <Magnetic>
                   <a
-                    href="mailto:your-email@example.com"
+                    href="mailto:tamilangame48@gmail.com"
                     className="group inline-flex items-center gap-4 rounded-full border border-cream-50/25 px-8 py-4 text-[12px] font-medium uppercase tracking-[0.24em] transition-all duration-500 hover:border-lavender-400 hover:bg-lavender-500 hover:text-white"
                   >
-                    your-email@example.com
+                    tamilangame48@gmail.com
                     <svg
                       viewBox="0 0 24 24"
                       fill="none"
@@ -80,7 +80,7 @@ export default function Footer() {
           </Reveal>
         </div>
         <div className="mt-20 flex flex-col gap-3 border-t border-cream-50/10 pt-8 text-[11px] uppercase tracking-[0.22em] text-cream-50/40 md:flex-row md:items-center md:justify-between">
-          <p>© 2026 Dharanya — Interior Design Student</p>
+          <p>© 2026 Dharanya — DOT School of Design</p>
           <p>Foundations of Space · Light · Material</p>
         </div>
       </div>

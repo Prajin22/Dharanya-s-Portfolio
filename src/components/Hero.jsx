@@ -73,9 +73,11 @@ export default function Hero({ ready }) {
           variants={fadeUp}
           initial="hidden"
           animate={state}
-          className="mt-7 text-xs font-medium uppercase tracking-[0.42em] text-charcoal-soft md:text-sm"
+          className="mt-7 flex flex-wrap justify-center items-center gap-x-3 gap-y-1.5 text-xs font-medium uppercase tracking-[0.38em] text-charcoal-soft md:text-sm"
         >
-          Interior Design & Spatial Foundations
+          <span>Interior Design & Spatial Foundations</span>
+          <span className="hidden md:inline text-lavender-400">·</span>
+          <span>DOT School of Design, Chennai</span>
         </motion.p>
         <motion.p
           custom={0.66}

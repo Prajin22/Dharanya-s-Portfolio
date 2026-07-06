@@ -52,12 +52,12 @@ export default function About() {
         <div className="lg:col-span-6 lg:col-start-7 lg:pt-24">
           <Reveal>
             <p className="text-lg leading-relaxed text-charcoal-soft md:text-xl">
-              As a first-year interior design student, my focus is on mastering the foundational, tactile elements that dictate how an environment feels, functions, and connects with human scale.
+              Currently pursuing my studies at the <strong className="font-semibold text-lavender-600">DOT School of Design, Chennai</strong>, my focus as a first-year interior design student is on mastering the foundational, tactile elements that dictate how an environment feels, functions, and connects with human scale.
             </p>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-6 text-base leading-relaxed text-charcoal-mute">
-              Every drawing, painting and craft study in this portfolio is a deliberate exercise — training the eye to measure, the hand to describe, and the mind to feel how material and light shape human experience long before a floor plan is drawn.
+              At DOT School of Design—a pioneering institution in Chennai known for its hands-on, state-of-the-art design studios and industrial design labs—we are encouraged to merge traditional art and craft studies with industrial and architectural principles. Every drawing, painting, and craft study in this portfolio is a deliberate exercise: training the eye to measure, the hand to describe, and the mind to feel how material and light shape human experience long before a floor plan is drawn.
             </p>
           </Reveal>
           <Reveal delay={0.18}>
