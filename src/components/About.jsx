@@ -1,8 +1,6 @@
 import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import Reveal from './Reveal.jsx'
-import ArtworkMedia from './ArtworkMedia.jsx'
-import { artProjects } from '../data/projects.js'
 
 const chips = ['Form', 'Light', 'Texture', 'Emotion', 'Human Scale']
 
@@ -15,9 +13,8 @@ const stats = [
 export default function About() {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] })
-  const floatY = useTransform(scrollYProgress, [0, 1], [60, -60])
-  const rotate = useTransform(scrollYProgress, [0, 1], [-8, -2])
-  const featured = artProjects.find((p) => p.id === 'radha')
+  const floatY = useTransform(scrollYProgress, [0, 1], [40, -40])
+  const rotate = useTransform(scrollYProgress, [0, 1], [-3.5, -0.5])
 
   return (
     <section ref={ref} id="about" className="relative scroll-mt-16 overflow-hidden bg-white">
@@ -40,13 +37,23 @@ export default function About() {
                 <em className="text-lavender-600"> form, light, texture, and emotion.</em>
               </h2>
             </Reveal>
-            {featured && (
-              <motion.div style={{ y: floatY, rotate }} className="mt-14 hidden w-44 overflow-hidden rounded-2xl shadow-soft lg:block">
-                <div className="aspect-[3/4]">
-                  <ArtworkMedia project={featured} idPrefix="about-" />
+            <Reveal delay={0.2}>
+              <motion.div style={{ y: floatY, rotate }} className="relative mt-14 w-56 md:w-64">
+                <div aria-hidden="true" className="absolute -inset-3 rotate-[4deg] rounded-[30px] border border-lavender-300/70 bg-lavender-100/60" />
+                <div className="relative aspect-[3/4] overflow-hidden rounded-[24px] shadow-lift">
+                  <img
+                    src="/profile.jpg"
+                    alt="Dharanya, interior design student at DOT School of Design, Chennai"
+                    loading="lazy"
+                    className="h-full w-full object-cover"
+                  />
                 </div>
+                <p className="mt-5 flex items-center gap-3 text-[10px] uppercase tracking-[0.3em] text-charcoal-mute">
+                  <span className="h-px w-6 bg-lavender-400" />
+                  Dharanya · B.Des Interior Design
+                </p>
               </motion.div>
-            )}
+            </Reveal>
           </div>
         </div>
         <div className="lg:col-span-6 lg:col-start-7 lg:pt-24">

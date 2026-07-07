@@ -63,7 +63,7 @@ export default function Navbar({ ready }) {
               </a>
             ))}
             <a
-              href="mailto:your-email@example.com"
+              href="mailto:tamilangame48@gmail.com"
               className="rounded-full border border-charcoal/15 px-6 py-2.5 text-[12px] font-medium uppercase tracking-[0.18em] text-charcoal transition-all duration-500 hover:border-lavender-500 hover:bg-lavender-500 hover:text-white"
             >
               Say Hello
@@ -112,8 +112,11 @@ export default function Navbar({ ready }) {
               transition={{ delay: 0.45, duration: 0.6 }}
               className="flex flex-col gap-2 text-sm text-charcoal-mute"
             >
-              <a href="mailto:your-email@example.com" className="text-charcoal">
-                your-email@example.com
+              <a href="mailto:tamilangame48@gmail.com" className="text-charcoal">
+                tamilangame48@gmail.com
+              </a>
+              <a href="tel:+919561056136" className="text-charcoal">
+                +91 95610 56136
               </a>
               <p className="text-[10px] uppercase tracking-[0.3em]">Interior Design & Spatial Foundations</p>
             </motion.div>

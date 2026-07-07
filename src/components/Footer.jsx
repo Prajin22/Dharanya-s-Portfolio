@@ -33,7 +33,7 @@ export default function Footer() {
               </p>
             </Reveal>
             <Reveal delay={0.24}>
-              <div className="mt-10">
+              <div className="mt-10 flex flex-wrap items-center gap-4">
                 <Magnetic>
                   <a
                     href="mailto:tamilangame48@gmail.com"
@@ -49,6 +49,21 @@ export default function Footer() {
                     >
                       <path d="M7 17L17 7M9 7h8v8" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
+                  </a>
+                </Magnetic>
+                <Magnetic>
+                  <a
+                    href="tel:+919561056136"
+                    className="group inline-flex items-center gap-4 rounded-full border border-cream-50/25 px-8 py-4 text-[12px] font-medium uppercase tracking-[0.24em] transition-all duration-500 hover:border-lavender-400 hover:bg-lavender-500 hover:text-white"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-4 w-4">
+                      <path
+                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                    +91 95610 56136
                   </a>
                 </Magnetic>
               </div>
